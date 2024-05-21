@@ -21,7 +21,7 @@ class ApiState extends State<ApiResultWidget>{
   double? pres;
   double? winds;
   Future<Response> callApi() async {
-    String apikey = "d7a5a2fccc4dd03aa3ba464e7fe68270";
+    String apikey = "API key";
     String cityName = "kor";
     String apiCall = "https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apikey";
     final response = await Dio().get(apiCall);
